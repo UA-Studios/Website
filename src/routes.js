@@ -7,6 +7,7 @@ import TwoDanimation from "./pages/animation/2Danimation/2Danimation";
 import WhiteboardAnimation from "./pages/animation/whiteboardAnimation/whiteboardAnimation";
 import ThreeDanimation from "./pages/animation/3Danimation/3Danimation";
 import Home from "./pages/home/home";
+import Footer from "./components/footer/footer";
 
 const Routes = () => {
   return (
@@ -25,6 +26,7 @@ const Routes = () => {
           component={WhiteboardAnimation}
         />
       </Switch>
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };

@@ -1,3 +1,4 @@
+import logo from "./assets/images/home/logo.png";
 import landingImg from "./assets/images/home/landing.png";
 import photoVideoImg from "./assets/images/home/photoVideo.png";
 import planeImg from "./assets/images/home/plane.png";
@@ -12,8 +13,145 @@ import twoDanimationImg from "./assets/images/services/animation/2Danimation.jpe
 /////////////////////common exports/////////////////////
 export const common_1 = common1;
 export const common_2 = common2;
+export const companyLogo = logo;
+/////////////////////Navbar/////////////////////
+export const navbar = {
+  logo: logo,
+  menuNames: [
+    { name: "HOME" },
+    { name: "PRODUCTS" },
+    { name: "PORTFOLIO" },
+    { name: "SERVICES" },
+    { name: "BLOG" },
+    { name: "ABOUT US" },
+    { name: "CONTACT US" },
+  ],
+};
 
 /////////////////////homepage/////////////////////
+
+export const homepage = {
+  navbar: {
+    logo: logo,
+  },
+  working: {
+    leftCard: [
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+    ],
+    rightCard: [
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Animation",
+        SubText: "Explain your products and services effectively",
+      },
+    ],
+  },
+  videoType: {
+    headerText: "Video Types",
+    card: [
+      {
+        image: photoVideoImg,
+        headerText: "Explainer Videos",
+        SubText:
+          "Explain your product or service in the most effective way and generate more leads",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Video Series",
+        SubText: "Animated video series with a uniform theme and a common goal",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Training Videos",
+        SubText:
+          "Show how your product or service works and make your customers’ lives easier",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Whiteboard Videos",
+        SubText:
+          "Sell complex ideas effectively and boost attention & retention of your audience",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Social Media Videos",
+        SubText: "Boost social media presence with short and effective videos",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "3D Animated Video​s",
+        SubText:
+          "Describe each and every component of your product with stunning 3D visuals",
+      },
+    ],
+  },
+  stats: {
+    headerText: "Our Statistics",
+    card: [
+      {
+        headerText: "7+",
+        SubText: "YEARS OF EXPERIENCE",
+      },
+      {
+        headerText: "20+",
+        SubText: "TEAM OF EXPERTS",
+      },
+      {
+        headerText: "1800+",
+        SubText: "VIDEOS DELIVERED",
+      },
+      {
+        headerText: "1500+",
+        SubText: "MILLION VIEWS",
+      },
+    ],
+  },
+  clients: {
+    headerText: "Our Clients",
+    card: [
+      {
+        headerText: "7+",
+        SubText: "YEARS OF EXPERIENCE",
+      },
+      {
+        headerText: "20+",
+        SubText: "TEAM OF EXPERTS",
+      },
+      {
+        headerText: "1800+",
+        SubText: "VIDEOS DELIVERED",
+      },
+      {
+        headerText: "1500+",
+        SubText: "MILLION VIEWS",
+      },
+    ],
+  },
+};
 
 //header
 export const number1 = "+91 9898659586";
@@ -28,23 +166,24 @@ export const LandingCardImg = landingImg;
 export const service = [
   {
     image: photoVideoImg,
-    headerText: "Explainer Video",
+    headerText: "Whiteboard Animation",
     SubText: "Explain your products and services effectively",
   },
   {
     image: planeImg,
-    headerText: "2D Animation Video",
+    headerText: "2D Animation",
     SubText: "Most popular forms of video to engage your audience",
   },
   {
     image: camImg,
-    headerText: "WhiteBoard Animation",
+    headerText: "3D Animation",
     SubText: "The ability to make complex ideas easier to understand",
   },
   {
     image: camFileImg,
-    headerText: "Company Profile Video",
-    SubText: "Awareness of a company’s brand, products, and market",
+    headerText: "Video Ads",
+    SubText:
+      "A short film or video that is used to promote a product, service, or brand.",
   },
 ];
 
@@ -54,18 +193,23 @@ export const portfolioFooter = "Want to see more videos?";
 export const portfolioFooterBtnText = "Click here";
 export const portfolio = [
   {
+    id: 1,
     link: "https://www.youtube.com/embed/lH1c33Ositw",
   },
   {
+    id: 1,
     link: "https://www.youtube.com/embed/lH1c33Ositw",
   },
   {
+    id: 0,
     link: "https://www.youtube.com/embed/lH1c33Ositw",
   },
   {
+    id: 0,
     link: "https://www.youtube.com/embed/lH1c33Ositw",
   },
   {
+    id: 0,
     link: "https://www.youtube.com/embed/lH1c33Ositw",
   },
 ];
@@ -119,9 +263,9 @@ export const services = {
     },
     twoDanimation: {
       coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      grid1Header: "What is a 2D Animation Video and when to use it?",
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "Explain, entertain, engage and entice your customers with our 2D animated videos. The use of characters and situational life events make them highly relatable to your audience. Such videos are budget-friendly and can increase business conversions beyond expectations. 2D animation videos can be used as product explainer videos, mobile app explainer videos, and corporate explainer videos.",
       grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
       grid2SubText:
         "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
@@ -852,16 +996,16 @@ export const contactList = [
   {
     icon: 1,
     header: "Office",
-    subText: "504, Anand Mangal 2,  C.G. Road, Ahmedabad, Gujarat, 380009",
+    subText: "office # 8 Al-noor plaza, near t-chowk, shah rukne alam, Multan",
   },
   {
     icon: 2,
-    header: "Office",
-    subText: "504, Anand Mangal 2,  C.G. Road, Ahmedabad, Gujarat, 380009",
+    header: "Mail Us",
+    subText: "support@umeratiqstudio.com",
   },
   {
     icon: 3,
-    header: "Office",
-    subText: "504, Anand Mangal 2,  C.G. Road, Ahmedabad, Gujarat, 380009",
+    header: "Call Us",
+    subText: "+92-3157944844",
   },
 ];

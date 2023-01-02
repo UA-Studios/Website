@@ -27,23 +27,40 @@ const Portfolio = () => {
       >
         {portfolio?.map((p, i) => (
           <Grid item key={i}>
-            <Card>
+            <Card
+              sx={
+                p.id == 1
+                  ? { width: "560px", height: "315px" }
+                  : { width: "366.66px", height: "206.23px" }
+              }
+            >
               <iframe
                 src={p.link}
                 frameborder="0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
                 title="video"
+                width="100%"
+                height="100%"
               />
             </Card>
           </Grid>
         ))}
       </Grid>
       {/* <Grid container sx={{ margin: "2px", justifyContent: "center" }}> */}
-      <Typography gutterBottom variant="h5" component="div">
+      <Typography
+        sx={{ textAlign: "center", fontSize: "30px" }}
+        gutterBottom
+        variant="h5"
+        component="div"
+      >
         {portfolioFooter}
       </Typography>
-      <Button variant="outlined" startIcon={<YouTubeIcon />}>
+      <Button
+        sx={{ justifyItems: "center" }}
+        variant="outlined"
+        startIcon={<YouTubeIcon />}
+      >
         {portfolioFooterBtnText}
       </Button>
       {/* </Grid> */}
