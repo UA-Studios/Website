@@ -9,6 +9,22 @@ import contactBackArt from "./assets/images/contact/backart.png";
 import common1 from "./assets/images/common 1.png";
 import common2 from "./assets/images/common 2.png";
 import twoDanimationImg from "./assets/images/services/animation/2Danimation.jpeg";
+import logo1 from "./assets/images/home/logos/1.png";
+import logo2 from "./assets/images/home/logos/2.png";
+import logo3 from "./assets/images/home/logos/3.png";
+import logo4 from "./assets/images/home/logos/4.png";
+import logo5 from "./assets/images/home/logos/5.png";
+import logo6 from "./assets/images/home/logos/6.png";
+import review1 from "./assets/images/home/reviews/review1.png";
+import review2 from "./assets/images/home/reviews/review2.png";
+import review3 from "./assets/images/home/reviews/review3.png";
+import review4 from "./assets/images/home/reviews/review4.png";
+import work1 from "./assets/images/home/research.png";
+import work2 from "./assets/images/home/script.png";
+import work3 from "./assets/images/home/storyboard.png";
+import work4 from "./assets/images/home/animation.png";
+import work5 from "./assets/images/home/mic.png";
+import work6 from "./assets/images/home/mobile.png";
 
 /////////////////////common exports/////////////////////
 export const common_1 = common1;
@@ -37,36 +53,39 @@ export const homepage = {
   working: {
     leftCard: [
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work1,
+        headerText: "Research",
+        SubText:
+          "We understand your needs, target audience and your existing marketing strategy.",
       },
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work2,
+        headerText: "Script",
+        SubText:
+          "We draft script that explains your business in the most effective way",
       },
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work3,
+        headerText: "Storyboard Designing",
+        SubText: "We create stunning visual representation as per the script.",
       },
     ],
     rightCard: [
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work4,
+        headerText: "Animation Production",
+        SubText: "We give life to storyboard with engaging animation.",
       },
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work5,
+        headerText: "Voiceover",
+        SubText:
+          "We provide bespoke voiceover by a real human with music & sound effects.",
       },
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Animation",
-        SubText: "Explain your products and services effectively",
+        image: work6,
+        headerText: "Go Live",
+        SubText: "It’s time to take your beautiful creation to the world.",
       },
     ],
   },
@@ -75,37 +94,39 @@ export const homepage = {
     card: [
       {
         image: photoVideoImg,
-        headerText: "Explainer Videos",
+        headerText: "Whiteboard Videos",
+        // "Explainer Videos",
         SubText:
           "Explain your product or service in the most effective way and generate more leads",
       },
       {
         image: photoVideoImg,
-        headerText: "Video Series",
-        SubText: "Animated video series with a uniform theme and a common goal",
-      },
-      {
-        image: photoVideoImg,
-        headerText: "Training Videos",
+        headerText: "2D Animated Video​s",
         SubText:
-          "Show how your product or service works and make your customers’ lives easier",
-      },
-      {
-        image: photoVideoImg,
-        headerText: "Whiteboard Videos",
-        SubText:
-          "Sell complex ideas effectively and boost attention & retention of your audience",
-      },
-      {
-        image: photoVideoImg,
-        headerText: "Social Media Videos",
-        SubText: "Boost social media presence with short and effective videos",
+          "Describe each and every component of your product with stunning 3D visuals",
       },
       {
         image: photoVideoImg,
         headerText: "3D Animated Video​s",
         SubText:
           "Describe each and every component of your product with stunning 3D visuals",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Live Action Video Series",
+        SubText: "Animated video series with a uniform theme and a common goal",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Graphic Design",
+        SubText:
+          "Show how your product or service works and make your customers’ lives easier",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Game & Web Development",
+        SubText:
+          "Sell complex ideas effectively and boost attention & retention of your audience",
       },
     ],
   },
@@ -132,22 +153,41 @@ export const homepage = {
   },
   clients: {
     headerText: "Our Clients",
-    card: [
+    logo: [
       {
-        headerText: "7+",
-        SubText: "YEARS OF EXPERIENCE",
+        logo: logo1,
       },
       {
-        headerText: "20+",
-        SubText: "TEAM OF EXPERTS",
+        logo: logo2,
       },
       {
-        headerText: "1800+",
-        SubText: "VIDEOS DELIVERED",
+        logo: logo3,
       },
       {
-        headerText: "1500+",
-        SubText: "MILLION VIEWS",
+        logo: logo4,
+      },
+      {
+        logo: logo5,
+      },
+      {
+        logo: logo6,
+      },
+    ],
+  },
+  reviews: {
+    headerText: "What People Say",
+    review: [
+      {
+        review: review1,
+      },
+      {
+        review: review2,
+      },
+      {
+        review: review3,
+      },
+      {
+        review: review4,
       },
     ],
   },
@@ -194,29 +234,28 @@ export const portfolioFooterBtnText = "Click here";
 export const portfolio = [
   {
     id: 1,
-    link: "https://www.youtube.com/embed/lH1c33Ositw",
+    link: "https://www.youtube.com/embed/MEeu75fQUa8",
   },
   {
     id: 1,
-    link: "https://www.youtube.com/embed/lH1c33Ositw",
+    link: "https://www.youtube.com/embed/lpoL7Aw-7j8",
   },
   {
     id: 0,
-    link: "https://www.youtube.com/embed/lH1c33Ositw",
+    link: "https://www.youtube.com/embed/Zb17YZuEPJI",
   },
   {
     id: 0,
-    link: "https://www.youtube.com/embed/lH1c33Ositw",
+    link: "https://www.youtube.com/embed/tA3VMm7oDw0",
   },
   {
     id: 0,
-    link: "https://www.youtube.com/embed/lH1c33Ositw",
+    link: "https://www.youtube.com/embed/_sU--px8c2Q",
   },
 ];
 
 // working
 export const workingHeader = "How It Works";
-
 /////////////////////services/////////////////////
 
 export const services = {
@@ -226,10 +265,10 @@ export const services = {
       grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
+      grid1Link: "https://www.youtube.com/embed/GTu6oQ3IDuo",
       grid2SubText:
         "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
+      grid2Link: "https://www.youtube.com/embed/dlaXj7xnk3U",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
         { link: "https://www.youtube.com/embed/ngsDkRTInn4" },

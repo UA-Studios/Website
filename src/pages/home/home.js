@@ -53,6 +53,9 @@ const Home = () => {
           headerText={homepage.stats.headerText}
           card={homepage.stats.card}
           clientText={homepage.clients.headerText}
+          logo={homepage.clients.logo}
+          reviewText={homepage.reviews.headerText}
+          review={homepage.reviews.review}
         />
       </Box>
     </React.Fragment>

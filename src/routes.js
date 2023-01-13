@@ -11,23 +11,24 @@ import Footer from "./components/footer/footer";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <React.Fragment>
       <Header />
-      {/* <Menu /> */}
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/contact" exact component={ContactUS} />
-        <Route path="/2D-Animation" exact component={TwoDanimation} />
-        <Route path="/3D-Animation" exact component={ThreeDanimation} />
-        <Route
-          path="/Whiteboard-Animation"
-          exact
-          component={WhiteboardAnimation}
-        />
-      </Switch>
-      {/* <Footer /> */}
-    </BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" exact component={ContactUS} />
+          <Route path="/2D-Animation" exact component={TwoDanimation} />
+          <Route path="/3D-Animation" exact component={ThreeDanimation} />
+          <Route
+            path="/Whiteboard-Animation"
+            exact
+            component={WhiteboardAnimation}
+          />
+        </Switch>
+      </BrowserRouter>
+      <Footer />
+    </React.Fragment>
   );
 };
 export default Routes;

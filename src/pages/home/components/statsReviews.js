@@ -1,6 +1,7 @@
 import { Grid, Typography, Box } from "@mui/material";
 import React from "react";
-import MultiCarosel from "./multiCarosel";
+import Carousel from "nuka-carousel";
+
 const Stats = (props) => {
   return (
     <React.Fragment>
@@ -61,7 +62,41 @@ const Stats = (props) => {
           >
             {props.clientText}
           </Typography>
-          <MultiCarosel />
+          {/* <MultiCarosel src={props.logo} /> */}
+          <Box sx={{ width: "50%" }}>
+            <Carousel autoplay={true} slidesToShow={3}>
+              {props.logo?.map((p, i) => (
+                <img key={i} width="50%" src={p.logo} alt="" />
+              ))}
+            </Carousel>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            marginTop: "5%",
+            marginLeft: "6%",
+          }}
+        >
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: "42px",
+              // marginTop: "13%",
+            }}
+            gutterBottom
+            variant="h5"
+            component="div"
+          >
+            {props.reviewText}
+          </Typography>
+          <Box sx={{ width: "50%" }}>
+            <Carousel autoplay={true}>
+              {props.review?.map((p, i) => (
+                <img key={i} width="50%" src={p.review} alt="" />
+              ))}
+            </Carousel>
+          </Box>
+          {/* <MultiCarosel src={props.review} /> */}
         </Box>
       </Grid>
     </React.Fragment>

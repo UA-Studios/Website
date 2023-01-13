@@ -10,10 +10,7 @@ import { navbar } from "../../data";
 const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar
-        // sx={{ backgroundColor: "white" }}
-        position="static"
-      >
+      <AppBar sx={{ backgroundColor: "white" }} position="static">
         <Toolbar>
           <Link sx={{ flexGrow: 1 }} href="/">
             <IconButton
@@ -22,7 +19,7 @@ const Navbar = () => {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              <img src={navbar.logo} width="40px" />
+              <img src={navbar.logo} width="120px" />
             </IconButton>
           </Link>
 
