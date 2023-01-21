@@ -1,13 +1,19 @@
-import * as React from "react";
-import { AppBar, Link } from "@mui/material";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
+import React, { useState } from "react";
+import {
+  AppBar,
+  Link,
+  Box,
+  Toolbar,
+  Button,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import { navbar } from "../../data";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSubOpen, setIsSubOpen] = useState(false);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{ backgroundColor: "white" }} position="static">
@@ -24,9 +30,56 @@ const Navbar = () => {
           </Link>
 
           {navbar.menuNames.map((n, i) => (
-            <Link href="#" key={i}>
-              <Button sx={{ color: "black" }}>{n.name}</Button>
-            </Link>
+            <React.Fragment>
+              {n.services ? (
+                <div
+                  onClick={() => setIsOpen(true)}
+                  // onMouseEnter={() => setIsOpen(true)}
+                  //   onMouseLeave={() => setIsOpen(false)}
+                  style={{
+                    display: "inulne-block",
+                    position: "relative",
+                  }}
+                >
+                  <Button>{n.name}</Button>
+                  {isOpen && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "100%",
+                        backgroundColor: "black",
+                        left: 0,
+                      }}
+                    >
+                      {n.services.map((s, i) => (
+                        <React.Fragment>
+                          <ul
+                            onClick={() => setIsSubOpen(true)}
+                            // onMouseEnter={() => setIsSubOpen(true)}
+                            // onMouseLeave={() => setIsSubOpen(false)}
+                            key={i}
+                          >
+                            <Typography>{s.name}</Typography>
+                          </ul>
+                          {isSubOpen &&
+                            s.subServices.map((s, i) => (
+                              <Link href={s.link} key={i}>
+                                <ul>
+                                  <Typography>{s.name}</Typography>
+                                </ul>
+                              </Link>
+                            ))}
+                        </React.Fragment>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link href={n.link} key={i}>
+                  <Button sx={{ color: "black" }}>{n.name}</Button>
+                </Link>
+              )}
+            </React.Fragment>
           ))}
         </Toolbar>
       </AppBar>

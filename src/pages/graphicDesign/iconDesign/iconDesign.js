@@ -1,7 +1,7 @@
 import React from "react";
 import PageDraft from "../../../components/pageDraft/pageDraft";
 import { services } from "../../../data";
-const TwoDanimation = () => {
+const IconDesign = () => {
   return (
     <div className="home_root">
       <PageDraft
@@ -20,4 +20,4 @@ const TwoDanimation = () => {
   );
 };
 
-export default TwoDanimation;
+export default IconDesign;

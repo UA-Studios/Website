@@ -12,7 +12,7 @@ const ThreeDanimation = () => {
         grid2SubText={services.animation.threeDanimation.grid2SubText}
         grid2Link={services.animation.threeDanimation.grid2Link}
         explainertext={services.animation.threeDanimation.explainertext}
-        link={services.animation.threeDanimation.explainervids}
+        explainervids={services.animation.threeDanimation.explainervids}
         faqText={services.animation.threeDanimation.faqText}
         faq={services.animation.threeDanimation.faq}
       />

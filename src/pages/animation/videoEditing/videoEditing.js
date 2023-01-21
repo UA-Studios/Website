@@ -1,7 +1,7 @@
 import React from "react";
 import PageDraft from "../../../components/pageDraft/pageDraft";
 import { services } from "../../../data";
-const WhiteboardAnimation = () => {
+const VideoEditing = () => {
   return (
     <div className="home_root">
       <PageDraft
@@ -20,4 +20,4 @@ const WhiteboardAnimation = () => {
   );
 };
 
-export default WhiteboardAnimation;
+export default VideoEditing;

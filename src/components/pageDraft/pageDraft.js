@@ -13,9 +13,13 @@ import { common_1, common_2 } from "../../data";
 
 const PageDraft = (props) => {
   return (
-    <div className="home_root">
+    <div>
       <LandingImage image={props.image} />
-      <Grid sx={{ margin: "10px 10px" }} container spacing={2}>
+      <Grid
+        sx={{ margin: "10px 10px", maxWidth: "95%", justifyContent: "center" }}
+        container
+        spacing={2}
+      >
         <Grid sx={{ padding: "10px" }} xs={6}>
           <Typography gutterBottom variant="h4" component="div">
             {props.grid1Header}
@@ -59,7 +63,7 @@ const PageDraft = (props) => {
         </Grid>
       </Grid>
       <LandingImage image={common_1} />
-      <Grid container spacing={2}>
+      <Grid sx={{ justifyContent: "center" }} container spacing={2}>
         <Typography
           sx={{
             margin: "15px 30px 10px 30px",
@@ -73,19 +77,48 @@ const PageDraft = (props) => {
         >
           {props.explainertext}
         </Typography>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          {props.link?.map((l, i) => (
-            <Grid key={i} item xs={3}>
-              <Card>
-                <iframe
-                  src={l.link}
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="video"
-                />
-              </Card>
-            </Grid>
+        <Grid
+          container
+          sx={{ maxWidth: "95%", justifyContent: "center" }}
+          rowSpacing={1}
+          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+        >
+          {props.explainervids?.map((e, i) => (
+            <React.Fragment>
+              <Typography
+                sx={{
+                  margin: "15px 30px 10px 30px",
+                  flexGrow: 1,
+                  textAlign: "center",
+                }}
+                // align="center"
+                gutterBottom
+                variant="h4"
+                component="div"
+              >
+                {e.title}
+              </Typography>
+              <Grid
+                container
+                sx={{ maxWidth: "95%", justifyContent: "center" }}
+                rowSpacing={1}
+                columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+              >
+                {e.links?.map((l, i) => (
+                  <Grid key={i} item xs={3}>
+                    <Card>
+                      <iframe
+                        src={l.link}
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="video"
+                      />
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+            </React.Fragment>
           ))}
         </Grid>
       </Grid>
