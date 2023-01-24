@@ -26,7 +26,7 @@ import work4 from "./assets/images/home/animation.png";
 import work5 from "./assets/images/home/mic.png";
 import work6 from "./assets/images/home/mobile.png";
 import workGif from "./assets/images/home/workGif.gif";
-import homeVid1 from "./assets/images/home/";
+// import homeVid1 from "./assets/images/home/";
 
 /////////////////////common exports/////////////////////
 export const common_1 = common1;
