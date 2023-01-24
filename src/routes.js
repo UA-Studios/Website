@@ -24,6 +24,7 @@ import Illustrations from "./pages/graphicDesign/illustrations/illustrations";
 import NFTs from "./pages/graphicDesign/nft/nft";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
+import Privacy from "./pages/privacy/privacy";
 
 const Routes = () => {
   return (
@@ -73,6 +74,7 @@ const Routes = () => {
           />
           <Route path="/illustrations" exact component={Illustrations} />
           <Route path="/nft" exact component={NFTs} />
+          <Route path="/privacy" exact component={Privacy} />
         </Switch>
       </BrowserRouter>
       <Footer />

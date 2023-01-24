@@ -61,9 +61,7 @@ const Working = (props) => {
         </Grid>
         <Grid direction="column" xs={4} container>
           <Grid item xs={4}>
-            <Card>
-              <Typography variant="h5">hello</Typography>
-            </Card>
+            <img style={{ width: "100%" }} src={props.centerImg} />
           </Grid>
         </Grid>
         <Grid direction="column" xs={4} container>

@@ -25,6 +25,8 @@ import work3 from "./assets/images/home/storyboard.png";
 import work4 from "./assets/images/home/animation.png";
 import work5 from "./assets/images/home/mic.png";
 import work6 from "./assets/images/home/mobile.png";
+import workGif from "./assets/images/home/workGif.gif";
+import homeVid1 from "./assets/images/home/";
 
 /////////////////////common exports/////////////////////
 export const common_1 = common1;
@@ -36,7 +38,6 @@ export const navbar = {
   menuNames: [
     { link: "/", name: "HOME" },
     { link: "#", name: "PRODUCTS" },
-    { link: "#", name: "PORTFOLIO" },
     {
       name: "SERVICES",
       services: [
@@ -103,6 +104,7 @@ export const homepage = {
         SubText: "We create stunning visual representation as per the script.",
       },
     ],
+    centerCard: workGif,
     rightCard: [
       {
         image: work4,
@@ -583,18 +585,15 @@ export const services = {
       grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/DRvTPzsgqfE",
+      grid1Link: "https://www.youtube.com/embed/mvLyzXB-Jpg",
       grid2SubText:
         "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/_sU--px8c2Q",
+      grid2Link: "https://www.youtube.com/embed/jHB4whayU6E",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
         {
           title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ZrvXhApcFB0" },
-            { link: "https://www.youtube.com/embed/6jzIL2vZ-7c" },
-          ],
+          links: [{ link: "https://www.youtube.com/embed/jmozOyBhuyA" }],
         },
       ],
       faqText: "FAQ",
@@ -669,21 +668,17 @@ export const services = {
       grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
+      grid1Link: "https://www.youtube.com/embed/DRvTPzsgqfE",
       grid2SubText:
         "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
+      grid2Link: "https://www.youtube.com/embed/_sU--px8c2Q",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
         {
           title: "",
           links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
+            { link: "https://www.youtube.com/embed/ZrvXhApcFB0" },
+            { link: "https://www.youtube.com/embed/6jzIL2vZ-7c" },
           ],
         },
       ],

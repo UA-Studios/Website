@@ -43,6 +43,7 @@ const Home = () => {
         <Portfolio />
         <Working
           leftCard={homepage.working.leftCard}
+          centerImg={homepage.working.centerCard}
           rightCard={homepage.working.rightCard}
         />
         <VideoType
