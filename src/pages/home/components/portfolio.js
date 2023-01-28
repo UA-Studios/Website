@@ -47,23 +47,32 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
-      {/* <Grid container sx={{ margin: "2px", justifyContent: "center" }}> */}
-      <Typography
-        sx={{ textAlign: "center", fontSize: "30px" }}
-        gutterBottom
-        variant="h5"
-        component="div"
+      <Grid
+        container
+        direction="column"
+        sx={{
+          margin: "2px",
+          justifyContent: "center",
+          alignContent: "center",
+          marginTop: "2%",
+        }}
       >
-        {portfolioFooter}
-      </Typography>
-      <Button
-        sx={{ justifyItems: "center" }}
-        variant="outlined"
-        startIcon={<YouTubeIcon />}
-      >
-        {portfolioFooterBtnText}
-      </Button>
-      {/* </Grid> */}
+        <Typography
+          sx={{ textAlign: "center", fontSize: "30px" }}
+          gutterBottom
+          variant="h5"
+          component="div"
+        >
+          {portfolioFooter}
+        </Typography>
+        <Button
+          sx={{ width: "15%", marginLeft: "6%", marginTop: "1%" }}
+          variant="outlined"
+          startIcon={<YouTubeIcon />}
+        >
+          {portfolioFooterBtnText}
+        </Button>
+      </Grid>
     </div>
   );
 };

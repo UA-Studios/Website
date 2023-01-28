@@ -13,8 +13,8 @@ const PremiumVideos = () => {
         grid2Link={services.animation.premiumVids.grid2Link}
         explainertext={services.animation.premiumVids.explainertext}
         explainervids={services.animation.premiumVids.explainervids}
-        faqText={services.animation.premiumVids.faqText}
-        faq={services.animation.premiumVids.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

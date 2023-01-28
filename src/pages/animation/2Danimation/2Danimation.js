@@ -13,8 +13,8 @@ const TwoDanimation = () => {
         grid2Link={services.animation.twoDanimation.grid2Link}
         explainertext={services.animation.twoDanimation.explainertext}
         explainervids={services.animation.twoDanimation.explainervids}
-        faqText={services.animation.twoDanimation.faqText}
-        faq={services.animation.twoDanimation.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

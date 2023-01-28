@@ -13,8 +13,8 @@ const LogoAnimation = () => {
         grid2Link={services.animation.logoAnimation.grid2Link}
         explainertext={services.animation.logoAnimation.explainertext}
         explainervids={services.animation.logoAnimation.explainervids}
-        faqText={services.animation.logoAnimation.faqText}
-        faq={services.animation.logoAnimation.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

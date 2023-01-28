@@ -16,7 +16,7 @@ const Stats = (props) => {
       <Grid
         sx={{
           backgroundColor: "#13202B",
-          marginLeft: "9%",
+          marginLeft: "8%",
           borderRadius: "4px",
           width: "1160px",
           height: "253px",
@@ -47,14 +47,14 @@ const Stats = (props) => {
         <Box
           sx={{
             marginTop: "5%",
-            marginLeft: "6%",
+            // marginLeft: "4%",
           }}
         >
           <Typography
             sx={{
+              marginTop: "40px",
               textAlign: "center",
               fontSize: "42px",
-              // marginTop: "13%",
             }}
             gutterBottom
             variant="h5"
@@ -62,8 +62,8 @@ const Stats = (props) => {
           >
             {props.clientText}
           </Typography>
-          {/* <MultiCarosel src={props.logo} /> */}
-          <Box sx={{ width: "50%" }}>
+
+          <Box sx={{ width: "100%" }}>
             <Carousel autoplay={true} slidesToShow={3}>
               {props.logo?.map((p, i) => (
                 <img key={i} width="50%" src={p.logo} alt="" />
@@ -81,7 +81,6 @@ const Stats = (props) => {
             sx={{
               textAlign: "center",
               fontSize: "42px",
-              // marginTop: "13%",
             }}
             gutterBottom
             variant="h5"
@@ -89,14 +88,13 @@ const Stats = (props) => {
           >
             {props.reviewText}
           </Typography>
-          <Box sx={{ width: "50%" }}>
+          <Box sx={{ width: "100%" }}>
             <Carousel autoplay={true}>
               {props.review?.map((p, i) => (
-                <img key={i} width="50%" src={p.review} alt="" />
+                <img key={i} width="100%" src={p.review} alt="" />
               ))}
             </Carousel>
           </Box>
-          {/* <MultiCarosel src={props.review} /> */}
         </Box>
       </Grid>
     </React.Fragment>

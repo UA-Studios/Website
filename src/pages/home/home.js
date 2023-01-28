@@ -10,6 +10,7 @@ import { Box } from "@mui/system";
 import { Button, Grid, Typography } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { homepage } from "../../data";
+import Address from "../contactUS/components/address";
 // import { image, text } from "../../data";
 // import "./home.scss";
 
@@ -36,8 +37,8 @@ const Home = () => {
       <Box
         sx={{
           maxWidth: "95vw",
+          alignContent: "center",
         }}
-        className="home_root"
       >
         <ServicesCard />
         <Portfolio />
@@ -59,6 +60,7 @@ const Home = () => {
           review={homepage.reviews.review}
         />
       </Box>
+      <Address sx={{ marginTop: "90%" }} />
     </React.Fragment>
   );
 };

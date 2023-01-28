@@ -21,9 +21,12 @@ const PageDraft = (props) => {
         spacing={2}
       >
         <Grid sx={{ padding: "10px" }} xs={6}>
-          <Typography gutterBottom variant="h4" component="div">
-            {props.grid1Header}
-          </Typography>
+          {props.grid1Header ? (
+            <Typography gutterBottom variant="h4" component="div">
+              {props.grid1Header}
+            </Typography>
+          ) : null}
+
           <Typography variant="body2" color="text.secondary">
             {props.grid1SubText}
           </Typography>
@@ -42,26 +45,29 @@ const PageDraft = (props) => {
           </Card>
         </Grid>
       </Grid>
-      <Grid container spacing={2}>
-        <Grid xs={6}>
-          <Card>
-            <iframe
-              width="675"
-              height="380"
-              src={props.grid2Link}
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="video"
-            />
-          </Card>
+      {props.grid2Link && props.grid2SubText ? (
+        <Grid container spacing={2}>
+          <Grid xs={6}>
+            <Card>
+              <iframe
+                width="675"
+                height="380"
+                src={props.grid2Link}
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="video"
+              />
+            </Card>
+          </Grid>
+          <Grid xs={6}>
+            <Typography variant="body2" color="text.secondary">
+              {props.grid2SubText}
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid xs={6}>
-          <Typography variant="body2" color="text.secondary">
-            {props.grid2SubText}
-          </Typography>
-        </Grid>
-      </Grid>
+      ) : null}
+
       <LandingImage image={common_1} />
       <Grid sx={{ justifyContent: "center" }} container spacing={2}>
         <Typography
@@ -137,7 +143,14 @@ const PageDraft = (props) => {
         {props.faqText}
       </Typography>
       {props.faq?.map((f, i) => (
-        <Accordion key={i}>
+        <Accordion
+          sx={{
+            width: "80%",
+            left: "50%",
+            transform: "translate(-50%)",
+          }}
+          key={i}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"

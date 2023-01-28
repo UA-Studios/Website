@@ -13,14 +13,19 @@ const Working = (props) => {
   return (
     <div className="home_root">
       <Typography
-        sx={{ textAlign: "center", fontSize: "42px" }}
+        sx={{
+          textAlign: "center",
+          fontSize: "42px",
+          marginTop: "2%",
+          marginBottom: "5%",
+        }}
         gutterBottom
         variant="h5"
         component="div"
       >
         {workingHeader}
       </Typography>
-      <Grid container spacing={2}>
+      <Grid sx={{ marginLeft: "1%" }} container spacing={2}>
         <Grid direction="column" xs={4} container>
           {props.leftCard?.map((p, i) => (
             <Grid item xs={4}>
@@ -60,7 +65,7 @@ const Working = (props) => {
           ))}
         </Grid>
         <Grid direction="column" xs={4} container>
-          <Grid item xs={4}>
+          <Grid sx={{ marginTop: "10%" }} item xs={4}>
             <img style={{ width: "100%" }} src={props.centerImg} />
           </Grid>
         </Grid>

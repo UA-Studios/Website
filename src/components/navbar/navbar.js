@@ -7,6 +7,7 @@ import {
   Button,
   IconButton,
   Typography,
+  Card,
 } from "@mui/material";
 import { navbar } from "../../data";
 
@@ -61,14 +62,16 @@ const Navbar = () => {
                           >
                             <Typography>{s.name}</Typography>
                           </ul>
-                          {isSubOpen &&
-                            s.subServices.map((s, i) => (
-                              <Link href={s.link} key={i}>
-                                <ul>
-                                  <Typography>{s.name}</Typography>
-                                </ul>
-                              </Link>
-                            ))}
+                          <Card sx={{ marginLeft: "50px" }}>
+                            {isSubOpen &&
+                              s.subServices.map((s, i) => (
+                                <Link href={s.link} key={i}>
+                                  <ul>
+                                    <Typography>{s.name}</Typography>
+                                  </ul>
+                                </Link>
+                              ))}
+                          </Card>
                         </React.Fragment>
                       ))}
                     </div>

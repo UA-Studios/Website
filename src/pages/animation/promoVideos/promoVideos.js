@@ -13,8 +13,8 @@ const PromoVideos = () => {
         grid2Link={services.animation.promoVids.grid2Link}
         explainertext={services.animation.promoVids.explainertext}
         explainervids={services.animation.promoVids.explainervids}
-        faqText={services.animation.promoVids.faqText}
-        faq={services.animation.promoVids.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

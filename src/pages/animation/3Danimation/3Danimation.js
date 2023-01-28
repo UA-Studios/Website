@@ -13,8 +13,8 @@ const ThreeDanimation = () => {
         grid2Link={services.animation.threeDanimation.grid2Link}
         explainertext={services.animation.threeDanimation.explainertext}
         explainervids={services.animation.threeDanimation.explainervids}
-        faqText={services.animation.threeDanimation.faqText}
-        faq={services.animation.threeDanimation.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

@@ -13,15 +13,6 @@ import LogoAnimation from "./pages/animation/logoAnimation/logoAnimation";
 import InteractiveVideos from "./pages/animation/interactiveVideos/interactiveVideos";
 import VideoEditing from "./pages/animation/videoEditing/videoEditing";
 import LogoDesign from "./pages/graphicDesign/logoDesign/logoDesign";
-import BrandingMaterial from "./pages/graphicDesign/brandingMaterial/brandingMaterial";
-import Caricature from "./pages/graphicDesign/caricature/caricature";
-import IconDesign from "./pages/graphicDesign/iconDesign/iconDesign";
-import Storyboard from "./pages/graphicDesign/storyboard/storyboard";
-import Infographics from "./pages/graphicDesign/infographics/infographics";
-import TwoDthreedCharacterDesign from "./pages/graphicDesign/twoDthreedCharacterDesign/twoDthreedCharacterDesign";
-import SocialMediaDesign from "./pages/graphicDesign/socialMediaDesign/socialMediaDesign";
-import Illustrations from "./pages/graphicDesign/illustrations/illustrations";
-import NFTs from "./pages/graphicDesign/nft/nft";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
 import Privacy from "./pages/privacy/privacy";
@@ -57,23 +48,6 @@ const Routes = () => {
           />
           <Route path="/video-editing" exact component={VideoEditing} />
           <Route path="/logo-design" exact component={LogoDesign} />
-          <Route path="/branding-Material" exact component={BrandingMaterial} />
-          <Route path="/storyboard" exact component={Storyboard} />
-          <Route path="/caricature" exact component={Caricature} />
-          <Route path="/icon-design" exact component={IconDesign} />
-          <Route path="/infographics" exact component={Infographics} />
-          <Route
-            path="/2d-3d-character-design"
-            exact
-            component={TwoDthreedCharacterDesign}
-          />
-          <Route
-            path="/social-media-design"
-            exact
-            component={SocialMediaDesign}
-          />
-          <Route path="/illustrations" exact component={Illustrations} />
-          <Route path="/nft" exact component={NFTs} />
           <Route path="/privacy" exact component={Privacy} />
         </Switch>
       </BrowserRouter>

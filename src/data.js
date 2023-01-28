@@ -5,10 +5,10 @@ import planeImg from "./assets/images/home/plane.png";
 import camImg from "./assets/images/home/cam.png";
 import camFileImg from "./assets/images/home/camFile.png";
 import contactUsImg from "./assets/images/contact/CONTACT US.png";
-import contactBackArt from "./assets/images/contact/backart.png";
+import contactBackArt from "./assets/images/contact/backart.gif";
 import common1 from "./assets/images/common 1.png";
 import common2 from "./assets/images/common 2.png";
-import twoDanimationImg from "./assets/images/services/animation/2Danimation.jpeg";
+import twoDanimationImg from "./assets/images/animation/2Danimation.jpeg";
 import logo1 from "./assets/images/home/logos/1.png";
 import logo2 from "./assets/images/home/logos/2.png";
 import logo3 from "./assets/images/home/logos/3.png";
@@ -26,6 +26,16 @@ import work4 from "./assets/images/home/animation.png";
 import work5 from "./assets/images/home/mic.png";
 import work6 from "./assets/images/home/mobile.png";
 import workGif from "./assets/images/home/workGif.gif";
+import whiteboard from "./assets/images/animation/whiteboard.png";
+import call from "./assets/images/contact/call.png";
+import email from "./assets/images/contact/@.png";
+import location from "./assets/images/contact/location.png";
+import threeDanimation from "./assets/images/animation/3D animation.png";
+import promo from "./assets/images/animation/promo.png";
+import premium from "./assets/images/animation/premium.png";
+import live from "./assets/images/animation/Live action explainer.png";
+import interactive from "./assets/images/animation/interactive.png";
+import video from "./assets/images/animation/vid  editing.png";
 // import homeVid1 from "./assets/images/home/";
 
 /////////////////////common exports/////////////////////
@@ -57,18 +67,7 @@ export const navbar = {
         },
         {
           name: "GRAPHIC DESIGNING",
-          subServices: [
-            { link: "/logo-design", ame: "Logo design" },
-            { link: "/branding-Material", ame: "Branding Material" },
-            { link: "/storyboard", ame: "Storyboard" },
-            { link: "/caricature", ame: "Caricature" },
-            { link: "/icon-design", ame: "Icon design" },
-            { link: "/infographics", ame: "Infographics" },
-            { link: "/2d-3d-character-design", ame: "2D/3D Character design" },
-            { link: "/social-media-design", ame: "Social Media Design" },
-            { link: "/illustrations", ame: "Illustrations" },
-            { link: "/nft", ame: "NFTs" },
-          ],
+          subServices: [{ link: "/logo-design", ame: "Logo design" }],
         },
       ],
     },
@@ -228,12 +227,6 @@ export const homepage = {
   },
 };
 
-//header
-export const number1 = "+91 9898659586";
-export const number2 = "+91 9979531345";
-export const mail = "hi@konnectme.video";
-export const slogan = "Keep Konnecting  Keep Growing";
-
 //landing card
 export const LandingCardImg = landingImg;
 
@@ -296,13 +289,13 @@ export const workingHeader = "How It Works";
 export const services = {
   animation: {
     whiteboardAnimation: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: whiteboard,
+      grid1Header: "When to use Whiteboard Animation Video?",
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "Whiteboard videos work best for complex or lengthy topics, educational topics or stories that are long.",
       grid1Link: "https://www.youtube.com/embed/GTu6oQ3IDuo",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "Unfold your story about your product or service with hand drawings using our Whiteboard Animation videos. As the name suggests, whiteboard videos use a white screen and the animation unfolds drawing-by-drawing.",
       grid2Link: "https://www.youtube.com/embed/dlaXj7xnk3U",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -345,36 +338,15 @@ export const services = {
           links: [{ link: "https://www.youtube.com/embed/Zkt-nJ8P2-Y" }],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     twoDanimation: {
       coverImg: twoDanimationImg,
       grid1Header: "What is a 2D Animation Video and when to use it?",
       grid1SubText:
-        "Explain, entertain, engage and entice your customers with our 2D animated videos. The use of characters and situational life events make them highly relatable to your audience. Such videos are budget-friendly and can increase business conversions beyond expectations. 2D animation videos can be used as product explainer videos, mobile app explainer videos, and corporate explainer videos.",
+        "Widely used in an advertisement, movies, cartoon shows, marketing videos, games, etc. 2D animation videos have their objects and characters created in two-dimensional space. Use 2D animation videos when you want to quickly make a less complex and more appealing content to tell your brand’s story.",
       grid1Link: "https://www.youtube.com/embed/Zb17YZuEPJI",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "Explain, entertain, engage and entice your customers with our 2D animated videos. The use of characters and situational life events make them highly relatable to your audience. Such videos are budget-friendly and can increase business conversions beyond expectations. 2D animation videos can be used as product explainer videos, mobile app explainer videos, and corporate explainer videos. ",
       grid2Link: "https://www.youtube.com/embed/ws7N5XJMq4s",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -390,36 +362,16 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     threeDanimation: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: threeDanimation,
+      grid1Header:
+        "Why should you prefer 3D Animation Video over 2D Animation Video?",
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "3D animation videos are more realistic than 2D animation videos. Despite being much more expensive than their 2D counterparts, they are the preferred choice when it comes to showing something larger than life.",
       grid1Link: "https://www.youtube.com/embed/tA3VMm7oDw0",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "Whether you want to show the cross-section of a complex machine or a 3D character design of your mascot, walkthrough video of your residential or commercial building or a marketing video describing your product or service, our affordable 3D animation videos are all that you need.",
       grid2Link: "https://www.youtube.com/embed/k1YEO6_mLiI",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -432,36 +384,14 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     promoVids: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: promo,
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "Welcome to our Promo Video category! Here, you'll find a wide range of high-quality videos that are perfect for promoting your business, product, or service. Whether you're looking to create a buzz around a new launch or simply want to showcase your brand in a creative way, our selection of promo videos is sure to impress.",
       grid1Link: "https://www.youtube.com/embed/QJAxFJnJ35I",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "Our team of professional videographers and editors are dedicated to creating visually stunning and engaging content that will help you stand out from the competition. With a focus on storytelling and effective messaging, our promo videos will help you connect with your target audience and achieve your marketing goals.",
       grid2Link: "https://www.youtube.com/embed/vK-bLXt7IIA",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -475,36 +405,14 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     premiumVids: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: premium,
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "Introducing our Premium Video collection! These exclusive videos are designed to take your visual content to the next level, with stunning visuals, expert storytelling, and cutting-edge production techniques.",
       grid1Link: "https://www.youtube.com/embed/lpoL7Aw-7j8",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "Our Premium Videos are perfect for businesses looking to make a big impact with their marketing campaigns, product launches, or other high-profile events. Whether you're looking to create a buzz around a new product, drive more sales, or simply showcase your brand in the best possible light, our premium videos will help you achieve your goals.",
       grid2Link: "https://www.youtube.com/embed/2u2qCB_YOMw",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -517,30 +425,9 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     liveActionExplainer: {
-      coverImg: twoDanimationImg,
+      coverImg: live,
       grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
@@ -556,27 +443,6 @@ export const services = {
             { link: "https://www.youtube.com/embed/ZrvXhApcFB0" },
             { link: "https://www.youtube.com/embed/6jzIL2vZ-7c" },
           ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
         },
       ],
     },
@@ -596,30 +462,9 @@ export const services = {
           links: [{ link: "https://www.youtube.com/embed/jmozOyBhuyA" }],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     interactiveVids: {
-      coverImg: twoDanimationImg,
+      coverImg: interactive,
       grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
@@ -641,37 +486,12 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
     videoEditing: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: video,
       grid1SubText:
         "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
       grid1Link: "https://www.youtube.com/embed/DRvTPzsgqfE",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/_sU--px8c2Q",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
         {
@@ -680,27 +500,6 @@ export const services = {
             { link: "https://www.youtube.com/embed/ZrvXhApcFB0" },
             { link: "https://www.youtube.com/embed/6jzIL2vZ-7c" },
           ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
         },
       ],
     },
@@ -729,433 +528,69 @@ export const services = {
           ],
         },
       ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
     },
-    brandingMaterial: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    storyBoard: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    caricature: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    iconDesign: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    infoGraphics: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    twoThreeDesign: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    SocialMediaDesign: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    illustrations: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
-    nfts: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
-      grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
-      grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
-      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
-      explainervids: [
-        {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
-        },
-      ],
-      faqText: "FAQ",
-      faq: [
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-        {
-          title:
-            "What are the different types of video services that you provide?",
-          details:
-            "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include:      ",
-        },
-      ],
-    },
+  },
+  faq: {
+    faqText: "FAQ",
+    faq: [
+      {
+        title:
+          "What are the different types of video services that you provide?",
+        details:
+          "We provide all types of 2D animation and certain types of 3D animation video services. Our list of video types include: Corporate Videos, Explainer Videos, Whiteboard Animation, Character Animation, Motion Graphics Videos, Mobile App Explainer Videos, Event Promotional Videos, Infographic Videos, Educational Videos, Stop Motion Videos, etc.",
+      },
+      {
+        title:
+          "Why should you choose Umer Atiq Animation as your video company?",
+        details:
+          "Our video production company aims to make your name. Hence every video is fully customised to achieve your marketing objectives. With over 6 years of experience, over 1000 videos successfully delivered to our clients and over 5 million views on our YouTube channels, we are nothing like other video animation companies. Our videos fit in your budget, provide top-notch quality and our entire team of creative writers, designers and animators is at your disposal to make your brand’s message reach your audience through an engaging video. What are you waiting for? Partner with us to create an outstanding video for your brand.",
+      },
+      {
+        title: "How much time does it take to make an animated video?",
+        details:
+          "Putting life into a video requires extensive research, knowledge about your industry, a perfect script that can do justice to your video and amazing animation that can elevate your brand. Every video requires experts from different domains: creative head, scriptwriters, illustrators, designers, animators and voice-over artists. Having said that, usually a 1-minute 2D animation video takes about 7-10 working days and a 1-minute 3D animation takes about 15-30 days. It might take more time depending on the complexity of the video, duration of the video, integrating your feedback/revisions, etc. But your time is our utmost priority; we thrive on delivering your project on time.",
+      },
+      {
+        title: "How much does an animation video cost?",
+        details:
+          "An animation video comprises various stages – script writing, storyboard designing, animation, voice-over and background music & SFX. Cost of the video depends on how many stages would you like us to do, the style of video, the length of the video and how quickly you want it. Having said that, a 1-minute 2D animated video costs somewhere between PKR 10,000 to PKR 30,000 and a 1-minute 3D animated video costs somewhere between PKR 60,000 to PKR 90,000. For an accurate quote for your video, kindly email us on Support@umeratiqstudio.com and we’d be happy to help you.",
+      },
+      {
+        title: "What’s your video production process?",
+        details:
+          "At Umer Atiq Animation, we create engaging, high quality, visually engaging and completely customised animation videos as per your needs and industry. And this is backed by a solid process. Every video follows a 6-step process: Requirement gathering, Scriptwriting, Storyboard Designing, Animation, Voiceover and Background Music & SFX. Each stage comes with the liberty of revisions till your satisfaction. Each stage takes us a step closer to your dream video. Depending on your needs, our video production company can also provide unlimited changes and/or quicker delivery of video. We’re very flexible to help you achieve your dreams.",
+      },
+      {
+        title: "What are your payment terms?",
+        details:
+          "Once you partner with us for your video production needs, we send you an official proposal that mentions our payment terms, bank details and terms and conditions to proceed. Throughout the process, your consent is being taken at each stage to ensure an amazing output.",
+      },
+      {
+        title: "Is it possible to speed up the production process?",
+        details:
+          "We understand that you might have some unanticipated events where you might need to showcase your brand to get the maximum benefit. Depending on your budget, we might speed up the video production process. Do get in touch today and let us know your deadline and we will make every effort to accommodate that and create a fantastic video for you.",
+      },
+      {
+        title: "What details do I need to send?",
+        details:
+          "We usually require your brand logo, brand guidelines (if any), your existing website / brochure / presentation, etc.",
+      },
+      {
+        title: "How much revision(s) do you allow?",
+        details:
+          "As we had mentioned, our video production process is a 6-step process; work proceeds to the next stage only with the client’s approval. Typically, two changes per stage are allowed, but at times, we offer unlimited revisions until our client is satisfied with the outcome (terms and conditions apply). Usually, our work gets over only when you are satisfied with the video. So you can be assured that you will get a quality output.",
+      },
+      {
+        title: "What is included in the final deliverables?",
+        details:
+          "A WhatsApp HD quality video (854×480 pixels), YouTube HD quality video (1920×1080 pixels), And any other deliverables as discussed in our proposal.",
+      },
+      {
+        title: "Do I need more than 1 video?",
+        details:
+          "Every video is prepared based on its objectives and goals. Since every video tells a different story and with the attention span going down, it’s essential to put out your brand communication from time to time in different ways to engage your target audience. So if you feel that you want to put out your brand communication regularly in different ways, want to communicate various products / services in front of your audience or want to tackle multiple marketing goals, we have special packages to meet your bulk video requirements.",
+      },
+    ],
   },
 };
 
@@ -1167,17 +602,17 @@ export const contactGetInTouchSubtext =
   "  Get in touch to discuss your employee wellbeing needs today. Please give us a call, drop us an email or fill out the contact form and we’ll get back to you.";
 export const contactList = [
   {
-    icon: 1,
+    icon: location,
     header: "Office",
     subText: "office # 8 Al-noor plaza, near t-chowk, shah rukne alam, Multan",
   },
   {
-    icon: 2,
+    icon: email,
     header: "Mail Us",
     subText: "support@umeratiqstudio.com",
   },
   {
-    icon: 3,
+    icon: call,
     header: "Call Us",
     subText: "+92-3157944844",
   },
@@ -1185,60 +620,4 @@ export const contactList = [
 
 /////////////////////privacy/////////////////////
 
-export const privacy = `Privacy Policy
-Muhammad Umer built the Rocket Bumpy game as an Ad Supported game. This SERVICE is provided by Muhammad Umer at no cost and is intended for use as is.
-
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
-
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
-
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Rocket Bumpy unless otherwise defined in this Privacy Policy.
-
-Information Collection and Use
-
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
-
-The game does use third party services that may collect information used to identify you.
-
-Link to privacy policy of third party service providers used by the game
-
-Google Play Services
-Log Data
-
-I want to inform you that whenever you use my Service, in a case of an error in the game I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the game when utilizing my Service, the time and date of your use of the Service, and other statistics.
-
-Cookies
-
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
-
-This Service does not use these “cookies” explicitly. However, the game may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
-
-Service Providers
-
-I may employ third-party companies and individuals due to the following reasons:
-
-To facilitate our Service;
-To provide the Service on our behalf;
-To perform Service-related services; or
-To assist us in analyzing how our Service is used.
-I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
-
-Security
-
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
-
-Links to Other Sites
-
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
-
-Children’s Privacy
-
-These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
-
-Changes to This Privacy Policy
-
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
-
-Contact Us
-
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at uastudio2023@gmail.com.`;
+export const privacy = ``;

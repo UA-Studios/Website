@@ -13,8 +13,8 @@ const WhiteboardAnimation = () => {
         grid2Link={services.animation.whiteboardAnimation.grid2Link}
         explainertext={services.animation.whiteboardAnimation.explainertext}
         explainervids={services.animation.whiteboardAnimation.explainervids}
-        faqText={services.animation.whiteboardAnimation.faqText}
-        faq={services.animation.whiteboardAnimation.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );

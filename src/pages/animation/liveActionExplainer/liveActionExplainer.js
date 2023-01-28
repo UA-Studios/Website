@@ -13,8 +13,8 @@ const LiveActionExplainer = () => {
         grid2Link={services.animation.liveActionExplainer.grid2Link}
         explainertext={services.animation.liveActionExplainer.explainertext}
         explainervids={services.animation.liveActionExplainer.explainervids}
-        faqText={services.animation.liveActionExplainer.faqText}
-        faq={services.animation.liveActionExplainer.faq}
+        faqText={services.faq.faqText}
+        faq={services.faq.faq}
       />
     </div>
   );
