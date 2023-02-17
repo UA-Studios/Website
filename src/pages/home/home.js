@@ -11,13 +11,11 @@ import { Button, Grid, Typography } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { homepage } from "../../data";
 import Address from "../contactUS/components/address";
-// import { image, text } from "../../data";
-// import "./home.scss";
 
 const Home = () => {
   return (
     <React.Fragment>
-      <Grid
+      {/* <Grid
         sx={{
           position: "absolute",
           marginTop: "20px",
@@ -31,13 +29,14 @@ const Home = () => {
         >
           <PlayArrowIcon />
         </Button>
-        <Typography>see how it works</Typography>
-      </Grid>
+        <Typography sx={{ marginTop: "15px" }}>see how it works</Typography>
+      </Grid> */}
       <LandingImage image={LandingCardImg} sx={{}} />
       <Box
         sx={{
-          maxWidth: "95vw",
-          alignContent: "center",
+          maxWidth: "95%",
+
+          margin: "auto",
         }}
       >
         <ServicesCard />
@@ -60,7 +59,7 @@ const Home = () => {
           review={homepage.reviews.review}
         />
       </Box>
-      <Address sx={{ marginTop: "90%" }} />
+      <Address sx={{ margin: "auto", marginTop: "75%" }} />
     </React.Fragment>
   );
 };

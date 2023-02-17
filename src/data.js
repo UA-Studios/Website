@@ -8,7 +8,7 @@ import contactUsImg from "./assets/images/contact/CONTACT US.png";
 import contactBackArt from "./assets/images/contact/backart.gif";
 import common1 from "./assets/images/common 1.png";
 import common2 from "./assets/images/common 2.png";
-import twoDanimationImg from "./assets/images/animation/2Danimation.jpeg";
+import twoDanimationImg from "./assets/images/animation/2Danimation.png";
 import logo1 from "./assets/images/home/logos/1.png";
 import logo2 from "./assets/images/home/logos/2.png";
 import logo3 from "./assets/images/home/logos/3.png";
@@ -36,6 +36,24 @@ import premium from "./assets/images/animation/premium.png";
 import live from "./assets/images/animation/Live action explainer.png";
 import interactive from "./assets/images/animation/interactive.png";
 import video from "./assets/images/animation/vid  editing.png";
+import logoAnimation from "./assets/images/animation/LOGO ANIMATION.png";
+import aboutus from "./assets/images/about/ABOUTUS.jpg";
+import rightimg from "./assets/images/about/new 3.png";
+import design from "./assets/images/design/GRAPHIC DES.png";
+import design1 from "./assets/images/design/flyer.jpg";
+import design2 from "./assets/images/design/logo.jpeg";
+import design3 from "./assets/images/design/logo2.jpg";
+import design4 from "./assets/images/design/logo3.jpg";
+import design5 from "./assets/images/design/logo4.jpg";
+import design6 from "./assets/images/design/banner.jpg";
+import design7 from "./assets/images/design/brochure.jpg";
+import video1 from "./assets/images/home/video/Explainer vides.png";
+import video2 from "./assets/images/home/video/TRAINNIG VIDEOS.png";
+import video3 from "./assets/images/home/video/3d animation.png";
+import video4 from "./assets/images/home/video/VIDEO SERIES.png";
+import video5 from "./assets/images/home/video/whiteboard banner.png";
+import game1 from "./assets/images/game/Game devalopment.png";
+
 // import homeVid1 from "./assets/images/home/";
 
 /////////////////////common exports/////////////////////
@@ -46,8 +64,7 @@ export const companyLogo = logo;
 export const navbar = {
   logo: logo,
   menuNames: [
-    { link: "/", name: "HOME" },
-    { link: "#", name: "PRODUCTS" },
+    { link: "/products", name: "PRODUCTS" },
     {
       name: "SERVICES",
       services: [
@@ -61,18 +78,26 @@ export const navbar = {
             { link: "/premium-videos", name: "Premium videos" },
             { link: "/live-action-explainer", name: "Live action explainer" },
             { link: "/logo-animation", name: "Logo animation" },
-            { link: "/interactive-videos", name: "Interactive videos" },
+            // { link: "/interactive-videos", name: "Interactive videos" },
             { link: "/video-editing", name: "Video editing" },
           ],
         },
         {
           name: "GRAPHIC DESIGNING",
-          subServices: [{ link: "/logo-design", ame: "Logo design" }],
+          link: "/graphic-designing",
+        },
+        {
+          name: "GAME DEVELOPMENT",
+          link: "/game-development",
+        },
+        {
+          name: "WEB DEVELOPMENT",
+          link: "/web-development",
         },
       ],
     },
     { link: "#", name: "BLOG" },
-    { link: "#", name: "ABOUT US" },
+    { link: "/about-us", name: "ABOUT US" },
     { link: "/contact", name: "CONTACT US" },
   ],
 };
@@ -127,40 +152,38 @@ export const homepage = {
     headerText: "Video Types",
     card: [
       {
-        image: photoVideoImg,
-        headerText: "Whiteboard Videos",
-        // "Explainer Videos",
+        image: video1,
+        headerText: "Explainer Videos",
         SubText:
           "Explain your product or service in the most effective way and generate more leads",
       },
       {
-        image: photoVideoImg,
-        headerText: "2D Animated Video​s",
-        SubText:
-          "Describe each and every component of your product with stunning 3D visuals",
-      },
-      {
-        image: photoVideoImg,
-        headerText: "3D Animated Video​s",
-        SubText:
-          "Describe each and every component of your product with stunning 3D visuals",
-      },
-      {
-        image: photoVideoImg,
-        headerText: "Live Action Video Series",
+        image: video4,
+        headerText: "Video Series",
         SubText: "Animated video series with a uniform theme and a common goal",
       },
       {
-        image: photoVideoImg,
-        headerText: "Graphic Design",
+        image: video2,
+        headerText: "Training Videos",
         SubText:
           "Show how your product or service works and make your customers’ lives easier",
       },
       {
-        image: photoVideoImg,
-        headerText: "Game & Web Development",
+        image: video5,
+        headerText: "Whiteboard Videos",
         SubText:
           "Sell complex ideas effectively and boost attention & retention of your audience",
+      },
+      {
+        image: photoVideoImg,
+        headerText: "Social Media Videos",
+        SubText: "Boost social media presence with short and effective videos",
+      },
+      {
+        image: video3,
+        headerText: "3D Animated Videos",
+        SubText:
+          "Describe each and every component of your product with stunning 3D visuals",
       },
     ],
   },
@@ -259,6 +282,8 @@ export const service = [
 export const portfolioHeader = "Portfolio";
 export const portfolioFooter = "Want to see more videos?";
 export const portfolioFooterBtnText = "Click here";
+export const portfolioFooterBtnLink =
+  "https://www.youtube.com/channel/UCPL0uASGcB9p1hViMmHyFHg";
 export const portfolio = [
   {
     id: 1,
@@ -428,12 +453,11 @@ export const services = {
     },
     liveActionExplainer: {
       coverImg: live,
-      grid1Header: "What is an Explainer Video and when to use it?",
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "At Umeratiq Studio, we understand the importance of visually appealing and effective marketing strategies. That's why we're dedicated to delivering stunning and engaging live action explainer videos that capture the attention of your target audience and leave a lasting impression. Our team of experts specializes in capturing dynamic footage, whether it be real-life actions, scenic landscapes, or unique perspectives, and combining it with special effects to bring your ideas to life.",
       grid1Link: "https://www.youtube.com/embed/DRvTPzsgqfE",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "With our live action videos, you can effectively showcase your product, service, or brand in a way that sets you apart from the competition. Our focus is on delivering high-quality content that not only looks great, but effectively communicates your message to your target audience. Our team of experts work closely with you to understand your goals and create a video that not only meets, but exceeds your expectations.",
       grid2Link: "https://www.youtube.com/embed/_sU--px8c2Q",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -447,13 +471,12 @@ export const services = {
       ],
     },
     logoAnimation: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+      coverImg: logoAnimation,
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "At Umeratiq Studio, we understand the importance of visually appealing and effective marketing strategies. That's why we're dedicated to delivering stunning and engaging live action explainer videos that capture the attention of your target audience and leave a lasting impression. Our team of experts specializes in capturing dynamic footage, whether it be real-life actions, scenic landscapes, or unique perspectives, and combining it with special effects to bring your ideas to life.",
       grid1Link: "https://www.youtube.com/embed/mvLyzXB-Jpg",
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
+        "With our live action videos, you can effectively showcase your product, service, or brand in a way that sets you apart from the competition. Our focus is on delivering high-quality content that not only looks great, but effectively communicates your message to your target audience. Our team of experts work closely with you to understand your goals and create a video that not only meets, but exceeds your expectations.",
       grid2Link: "https://www.youtube.com/embed/jHB4whayU6E",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -490,7 +513,7 @@ export const services = {
     videoEditing: {
       coverImg: video,
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
+        "At Umeratiq Studio, our team of experienced video editors are experts in the art of storytelling and use the latest software and techniques to turn raw footage into a visually stunning and emotionally engaging video. Whether you're looking to create a promotional video, a corporate video, or a personal memory reel, our video editing services will bring your vision to life with precision and professionalism.",
       grid1Link: "https://www.youtube.com/embed/DRvTPzsgqfE",
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
@@ -505,27 +528,91 @@ export const services = {
     },
   },
   graphicDesigning: {
-    logoDesign: {
-      coverImg: twoDanimationImg,
-      grid1Header: "What is an Explainer Video and when to use it?",
+    graphicDesign: {
+      coverImg: design,
       grid1SubText:
-        "An explainer video illustrates a complex idea into a simple and understandable video. When you want to explain your business, idea, product or service in the simplest possible manner, you should use explainer videos for the same.",
-      grid1Link: "https://www.youtube.com/embed/ngsDkRTInn4",
+        "At Umeratiq Studio, we offer a wide range of graphic design services to help businesses and individuals bring their creative vision to life. Our team of talented graphic designers use their skills and experience to create visually stunning and impactful designs that effectively communicate your brand's message to your target audience.",
+      grid1Img: design2,
       grid2SubText:
-        "Marketing is no longer just about money but meticulous planning, marvelous execution, mesmerizing experience, and hence a memorable output so that your money becomes a motivation for your buyers to buy. Make your marketing, branding, and advertising memorable with our corporate animated videos.",
-      grid2Link: "https://www.youtube.com/embed/tqOwAD6L-Qg",
+        "At Umeratiq Studio, we understand the importance of visual communication, and we're dedicated to helping our clients create designs that accurately represent their brand and values. From concept to final product, our graphic design services are designed to make the process of bringing your vision to life as easy and stress-free as possible. Choose Umeratiq Studio for your next graphic design project and elevate your brand's visual presence with professional and impactful designs.",
+      grid2Img: design3,
       explainertext: "Some of the Animated Explainer Videos we’ve made:​",
       explainervids: [
         {
-          title: "",
-          links: [
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-            { link: "https://www.youtube.com/embed/ngsDkRTInn4" },
-          ],
+          title: "LOGO",
+          imgs: [{ img: design4 }, { img: design5 }],
+        },
+        {
+          title: "BANNER",
+          imgs: [{ img: design6 }],
+        },
+        {
+          title: "BROCHURE",
+          imgs: [{ img: design7 }],
+        },
+        {
+          title: "FLYER",
+          imgs: [{ img: design1 }],
+        },
+      ],
+    },
+  },
+  gameDevelopment: {
+    gameDevelopment: {
+      coverImg: game1,
+      grid1SubText:
+        "At Umeratiq Studio, we offer a wide range of graphic design services to help businesses and individuals bring their creative vision to life. Our team of talented graphic designers use their skills and experience to create visually stunning and impactful designs that effectively communicate your brand's message to your target audience.",
+      grid1Img: design2,
+      grid2SubText:
+        "At Umeratiq Studio, we understand the importance of visual communication, and we're dedicated to helping our clients create designs that accurately represent their brand and values. From concept to final product, our graphic design services are designed to make the process of bringing your vision to life as easy and stress-free as possible. Choose Umeratiq Studio for your next graphic design project and elevate your brand's visual presence with professional and impactful designs.",
+      grid2Img: design3,
+      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
+      explainervids: [
+        {
+          title: "LOGO",
+          imgs: [{ img: design4 }, { img: design5 }],
+        },
+        {
+          title: "BANNER",
+          imgs: [{ img: design6 }],
+        },
+        {
+          title: "BROCHURE",
+          imgs: [{ img: design7 }],
+        },
+        {
+          title: "FLYER",
+          imgs: [{ img: design1 }],
+        },
+      ],
+    },
+  },
+  web: {
+    web: {
+      coverImg: game1,
+      grid1SubText:
+        "At Umeratiq Studio, we offer a wide range of graphic design services to help businesses and individuals bring their creative vision to life. Our team of talented graphic designers use their skills and experience to create visually stunning and impactful designs that effectively communicate your brand's message to your target audience.",
+      grid1Img: design2,
+      grid2SubText:
+        "At Umeratiq Studio, we understand the importance of visual communication, and we're dedicated to helping our clients create designs that accurately represent their brand and values. From concept to final product, our graphic design services are designed to make the process of bringing your vision to life as easy and stress-free as possible. Choose Umeratiq Studio for your next graphic design project and elevate your brand's visual presence with professional and impactful designs.",
+      grid2Img: design3,
+      explainertext: "Some of the Animated Explainer Videos we’ve made:​",
+      explainervids: [
+        {
+          title: "LOGO",
+          imgs: [{ img: design4 }, { img: design5 }],
+        },
+        {
+          title: "BANNER",
+          imgs: [{ img: design6 }],
+        },
+        {
+          title: "BROCHURE",
+          imgs: [{ img: design7 }],
+        },
+        {
+          title: "FLYER",
+          imgs: [{ img: design1 }],
         },
       ],
     },
@@ -618,6 +705,44 @@ export const contactList = [
   },
 ];
 
-/////////////////////privacy/////////////////////
+/////////////////////footer/////////////////////
 
-export const privacy = ``;
+export const footer = {
+  services: [
+    {
+      name: "Animation",
+      subServices: [
+        { link: "/whiteboard-animation", name: "Whiteboard animation" },
+        { link: "/2d-animation", name: "2D animation" },
+        { link: "/3d-animation", name: "3D animation" },
+        { link: "/promo-videos", name: "Promo videos" },
+        { link: "/premium-videos", name: "Premium videos" },
+        { link: "/live-action-explainer", name: "Live action explainer" },
+        { link: "/logo-animation", name: "Logo animation" },
+        // { link: "/interactive-videos", name: "Interactive videos" },
+        { link: "/video-editing", name: "Video editing" },
+      ],
+    },
+  ],
+  newServices: [
+    {
+      name: "GRAPHIC DESIGNING",
+      link: "/graphic-designing",
+    },
+    {
+      name: "GAME DEVELOPMENT",
+      link: "/game-development",
+    },
+    {
+      name: "WEB DEVELOPMENT",
+      link: "/web-development",
+    },
+  ],
+};
+
+/////////////////////about us/////////////////////
+
+export const about = {
+  image: aboutus,
+  rightimg: rightimg,
+};

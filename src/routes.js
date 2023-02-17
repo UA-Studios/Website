@@ -12,10 +12,14 @@ import LiveActionExplainer from "./pages/animation/liveActionExplainer/liveActio
 import LogoAnimation from "./pages/animation/logoAnimation/logoAnimation";
 import InteractiveVideos from "./pages/animation/interactiveVideos/interactiveVideos";
 import VideoEditing from "./pages/animation/videoEditing/videoEditing";
-import LogoDesign from "./pages/graphicDesign/logoDesign/logoDesign";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
 import Privacy from "./pages/privacy/privacy";
+import GraphicDesign from "./pages/graphicDesign/graphicDesign";
+import GameDevelopment from "./pages/gameDevelopment/gameDevelopment";
+import AboutUS from "./pages/aboutUS/aboutUS";
+import Products from "./pages/products/products";
+import WebDevelopment from "./pages/webDevelopment/webDevelopment";
 
 const Routes = () => {
   return (
@@ -47,8 +51,12 @@ const Routes = () => {
             component={WhiteboardAnimation}
           />
           <Route path="/video-editing" exact component={VideoEditing} />
-          <Route path="/logo-design" exact component={LogoDesign} />
+          <Route path="/graphic-designing" exact component={GraphicDesign} />
           <Route path="/privacy" exact component={Privacy} />
+          <Route path="/game-development" exact component={GameDevelopment} />
+          <Route path="/about-us" exact component={AboutUS} />
+          <Route path="/products" exact component={Products} />
+          <Route path="/web-development" exact component={WebDevelopment} />
         </Switch>
       </BrowserRouter>
       <Footer />

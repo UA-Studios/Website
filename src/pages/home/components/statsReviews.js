@@ -16,7 +16,7 @@ const Stats = (props) => {
       <Grid
         sx={{
           backgroundColor: "#13202B",
-          marginLeft: "8%",
+          margin: "auto",
           borderRadius: "4px",
           width: "1160px",
           height: "253px",
@@ -74,7 +74,6 @@ const Stats = (props) => {
         <Box
           sx={{
             marginTop: "5%",
-            marginLeft: "6%",
           }}
         >
           <Typography

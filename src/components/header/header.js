@@ -22,12 +22,18 @@ function Header() {
       position="static"
     >
       <Container sx={{ display: "flex" }} maxWidth="xl">
-        <Typography>Call Us: +92-3157944844</Typography>
-        <Typography sx={{ color: "#FF4A17" }}>+92-3157944844</Typography>
-        <Typography>Mail Us: support@umeratiqstudio.com</Typography>
-        <Typography sx={{ color: "#FF4A17" }}>
-          support@umeratiqstudio.com
-        </Typography>
+        <div style={{ display: "inherit" }}>
+          <Typography>Call Us: </Typography>
+          <Typography sx={{ color: "#FF4A17" }}>+92-3157944844</Typography>
+        </div>
+        <div
+          style={{ display: "inherit", marginLeft: "auto", marginRight: "0" }}
+        >
+          <Typography>Mail Us: </Typography>
+          <Typography sx={{ color: "#FF4A17" }}>
+            support@umeratiqstudio.com
+          </Typography>
+        </div>
       </Container>
     </AppBar>
   );

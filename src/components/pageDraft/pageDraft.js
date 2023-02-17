@@ -16,7 +16,7 @@ const PageDraft = (props) => {
     <div>
       <LandingImage image={props.image} />
       <Grid
-        sx={{ margin: "10px 10px", maxWidth: "95%", justifyContent: "center" }}
+        sx={{ margin: "auto", maxWidth: "95%", justifyContent: "center" }}
         container
         spacing={2}
       >
@@ -26,41 +26,66 @@ const PageDraft = (props) => {
               {props.grid1Header}
             </Typography>
           ) : null}
-
           <Typography variant="body2" color="text.secondary">
             {props.grid1SubText}
           </Typography>
         </Grid>
-        <Grid xs={6}>
+        <Grid sx={{ padding: "10px" }} xs={6}>
           <Card>
-            <iframe
-              width="675"
-              height="380"
-              src={props.grid1Link}
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="video"
-            />
-          </Card>
-        </Grid>
-      </Grid>
-      {props.grid2Link && props.grid2SubText ? (
-        <Grid container spacing={2}>
-          <Grid xs={6}>
-            <Card>
+            {props.grid1Link ? (
               <iframe
-                width="675"
+                width="675 "
                 height="380"
-                src={props.grid2Link}
+                src={props.grid1Link}
                 frameborder="0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
                 title="video"
               />
+            ) : (
+              <img
+                style={{ margin: "auto" }}
+                width="600 "
+                height="400"
+                src={props.grid1Img}
+              />
+            )}
+          </Card>
+        </Grid>
+      </Grid>
+      {(props.grid2Link && props.grid2SubText) || props.grid1Img ? (
+        <Grid
+          sx={{
+            margin: "auto",
+            maxWidth: "95%",
+            justifyContent: "center",
+          }}
+          container
+          spacing={2}
+        >
+          <Grid sx={{ padding: "10px" }} xs={6}>
+            <Card>
+              {props.grid2Link ? (
+                <iframe
+                  width="675 "
+                  height="380"
+                  src={props.grid2Link}
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="video"
+                />
+              ) : (
+                <img
+                  style={{ margin: "auto" }}
+                  width="600 "
+                  height="400"
+                  src={props.grid2Img}
+                />
+              )}
             </Card>
           </Grid>
-          <Grid xs={6}>
+          <Grid sx={{ padding: "10px" }} xs={6}>
             <Typography variant="body2" color="text.secondary">
               {props.grid2SubText}
             </Typography>
@@ -72,7 +97,9 @@ const PageDraft = (props) => {
       <Grid sx={{ justifyContent: "center" }} container spacing={2}>
         <Typography
           sx={{
-            margin: "15px 30px 10px 30px",
+            margin: "auto",
+            marginTop: "6%",
+            marginBottom: "2%",
             flexGrow: 1,
             textAlign: "center",
           }}
@@ -93,7 +120,9 @@ const PageDraft = (props) => {
             <React.Fragment>
               <Typography
                 sx={{
-                  margin: "15px 30px 10px 30px",
+                  margin: "auto",
+                  marginTop: "2%",
+                  marginBottom: "2%",
                   flexGrow: 1,
                   textAlign: "center",
                 }}
@@ -123,15 +152,24 @@ const PageDraft = (props) => {
                     </Card>
                   </Grid>
                 ))}
+                {e.imgs?.map((i, k) => (
+                  <Grid key={k} item xs={3}>
+                    <Card>
+                      <img width={300} height={150} src={i.img} />
+                    </Card>
+                  </Grid>
+                ))}
               </Grid>
             </React.Fragment>
           ))}
         </Grid>
       </Grid>
-      <LandingImage image={common_2} />
+      <LandingImage sx={{ marginTop: "2%" }} image={common_2} />
       <Typography
         sx={{
-          margin: "15px 30px 10px 30px",
+          margin: "auto",
+          marginTop: "2%",
+          marginBottom: "2%",
           flexGrow: 1,
           textAlign: "center",
         }}

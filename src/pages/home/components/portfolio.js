@@ -1,13 +1,13 @@
 import React from "react";
-import { Card, Typography, Grid, Button } from "@mui/material";
+import { Card, Typography, Grid, Button, Link } from "@mui/material";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import {
   portfolio,
   portfolioHeader,
   portfolioFooter,
   portfolioFooterBtnText,
+  portfolioFooterBtnLink,
 } from "../../../data";
-import { Container } from "@mui/system";
 
 const Portfolio = () => {
   return (
@@ -70,7 +70,9 @@ const Portfolio = () => {
           variant="outlined"
           startIcon={<YouTubeIcon />}
         >
-          {portfolioFooterBtnText}
+          <Link sx={{ textDecoration: "none" }} href={portfolioFooterBtnLink}>
+            {portfolioFooterBtnText}
+          </Link>
         </Button>
       </Grid>
     </div>

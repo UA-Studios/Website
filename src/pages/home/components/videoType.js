@@ -10,7 +10,7 @@ import {
 
 const VideoType = (props) => {
   return (
-    <div className="home_root">
+    <div style={{ width: "80%", margin: "auto" }} className="home_root">
       <Typography
         sx={{ textAlign: "center", fontSize: "42px" }}
         gutterBottom
